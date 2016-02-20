@@ -17,7 +17,7 @@ module.exports = {
 		definePlugin
 	],
 	output: {
-		path: '/build/js',
+		path: '/',
 		filename: '[name].bundle.js',
 		chunkFilename: '[id].bundle.js'
 	},
@@ -34,5 +34,9 @@ module.exports = {
 		// 	'es6-promise' : 'when'
 		// }
 	},
-	externals: { }
+	externals: { 
+    'react-dom' : 'ReactDOM',
+    'react' : 'React',
+    'redux' : 'Redux' 
+  }
 };
